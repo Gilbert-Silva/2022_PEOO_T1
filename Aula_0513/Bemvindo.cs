@@ -4,6 +4,6 @@ class Program {
   public static void Main() {
     Console.WriteLine("Digite seu nome");
     string s = Console.ReadLine();
-    Console.WriteLine("Bemvindo, " + s);
+    Console.WriteLine("Bemvindo, Sr. " + s);
   }
 }
