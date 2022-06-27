@@ -2,6 +2,11 @@ using System;
 
 class Program {
   public static void Main() {
+    string s = Console.ReadLine();
+    while (string.IsNullOrEmpty(s) == false) {
+      Console.WriteLine(s);
+      s = Console.ReadLine();
+    }
     Console.WriteLine(MMC(1, 2, 3));
     Console.WriteLine(MMC(2, 4, 8));
     Console.WriteLine(MMC(2, 4, 5));
