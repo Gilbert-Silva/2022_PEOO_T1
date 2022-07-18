@@ -1,35 +1,24 @@
 using System;
 class Program {
-  public static void Mensagem() {
-    Console.WriteLine("Olá");
-  }
   public static void Main() {
     Mensagem();
-    Bemvindo("Gabriel");
-    Bemvindo("Márcio");
-    Bemvindo("Marcílio");
+    Bemvindo("Gilbert");
+    Bemvindo("Eduardo");
+    Bemvindo("Minora");
     Console.WriteLine(PI());
     Console.WriteLine(ProximoNumero(18));
     Console.WriteLine(ProximoNumeroPar(18));
     Console.WriteLine(ProximoNumeroPar(19));
     MostrarNumeros(1, 10);
     MostrarNumeros(91, 100);
-    /*
-    int i = 1;
-    while (i <= 10) {
-      Console.WriteLine(i);
-      i++;
-    }
-    i = 91;
-    while (i <= 100) {
-      Console.WriteLine(i);
-      i++;
-    }*/
     Console.WriteLine("Média = " + Media(100, 100, 50, 50));
     Console.WriteLine("Média = " + Media(50, 50, 100, 100));
     Console.WriteLine("Passar = " + NotaPassar(60, 60, 60));
     Console.WriteLine("Passar = " + NotaPassar(90, 90, 90));
     Console.WriteLine("Passar = " + NotaPassar(80, 80, 80));
+  }
+  public static void Mensagem() {
+    Console.WriteLine("Olá");
   }
   public static int Media(int n1, int n2, int n3, int n4) {
     int m = (2*n1 + 2*n2 + 3*n3 + 3*n4) / 10;
@@ -59,9 +48,9 @@ class Program {
     return x;
   }
   public static int ProximoNumeroPar(int x) {
-    x = x + 1;
+    x = ProximoNumero(x);
     if (x % 2 != 0) {
-      x = x + 1;
+      x = ProximoNumero(x);
     }
     return x;
   }
