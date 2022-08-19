@@ -9,6 +9,14 @@ class Program {
     Console.WriteLine(v[1]);
     Console.WriteLine(v[2]);
     int ano = int.Parse(v[2]) + 1;
+    int mes = int.Parse(v[1]);
+    if (mes == 1) Console.WriteLine("janeiro");
+     
+    
+    switch (mes) {
+      case 1: Console.WriteLine("janeiro"); break;
+        
+    }
     Console.WriteLine(ano);
     Console.WriteLine($"{v[0]}/{v[1]}/{ano}");
   }  
